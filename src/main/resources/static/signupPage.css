@@ -1,0 +1,115 @@
+main{
+    width: 100%;
+    height: calc(100vh - 60px); /*This solves the problem with the navigation bar. This line en next line*/
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.main-section{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: -2px 2px 4px black;
+}
+
+.main-section-left{
+    width: 45%;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-section-left img{
+    width: 70%;
+
+}
+
+.main-section-left-caption{
+
+    padding-bottom: 40px;
+    color: #4f4f4f;
+}
+
+
+.main-section-left-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.main-section-left-form input{
+    width: 250px;
+    height: 30px;
+    font-size: 1.4rem;
+    line-height: 40px; /*To center it in the middle*/
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+
+}
+
+input:focus{
+    border-bottom: 2px solid var(--site-color-01); /*It makes the outline blue when we click*/
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    background-color: var(--site-color-01);
+    font-family: "Roboto", serif;
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+button:hover {  /*when you hover over the button, 1) the color will change; 2)the cusor will be a pointer*/
+    background-color: var(--site-color-01-hover);
+    cursor: pointer;
+
+
+}
+
+.main-section-left-link{
+    padding-top: 50px;
+
+}
+
+.main-section-left-link a{
+    color: black;
+    border-bottom: 1px solid black ;
+}
+
+.main-section-left-link a:hover{
+    color: var(--site-color-01);
+    border-bottom: 1px solid var(--site-color-01);
+}
+
+.main-section-right{
+    width: 55%;
+    background-image: url(img/atletiek_piste.jpg);
+    filter: grayscale(30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-right h3{
+    width: 400px;
+    color: white;
+    font-size: 3.5rem;
+    margin-right: 30px;
+    margin-top: 10px;
+    text-shadow: -2px 2px 4px black;
+}
